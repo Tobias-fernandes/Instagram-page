@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --gray: #fafafa;
+    --border: #dfdfdf;
+    --blue1: #4CB5F9;
+    --blue2: #0095F6;
+    --darkblue: #385185;
+    --moredarkblue: #35608A;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    gap: 30px;
+}
+
+#img-celular {
+    width: 370px;
+    height: 550px;
+}
+
+.direita {
+    width: 360px;
+    height: 550px;
+    text-align: center;
+}
+
+.input-box {
+    height: 400px;
+    border: 1px solid var(--border);
+    padding: 40px 38px 0 38px;
+}
+
+.input-login {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.input-login input {
+    padding: 9px 0 7px 8px;
+    border: 1px solid var(--border);
+    background: var(--gray);
+}
+
+#btn-enviar {
+    width: 100%;
+    background-color: var(--blue1);
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.linha-ou {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin: 20px 0;
+}
+
+.linha {
+    height: 1px;
+    background: var(--border);
+    width: 100%;
+}
+
+.ou {
+    color: #888;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.entrar-facebook a{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 500;
+    color: var(--darkblue);
+    margin: 2px 0 22px 0;
+}
+
+.entrar-facebook a img{
+    width: 16px;
+    height: 16px;
+}
+
+.forgot-pw a {
+    font-size: 12px;
+    color: var(--moredarkblue);
+}
+
+.entrar-facebook a,
+.forgot-pw a,
+.sign-up a {
+    text-decoration: none;
+}
+
+.entrar-facebook a,
+.sign-up,
+.gta {
+    font-size: 14px;
+}
+
+
+.sign-up {
+    border: 1px solid var(--border);
+    padding: 20px 0;
+}
+
+.sign-up a {
+    color: var(--blue2);
+    font-weight: 500;
+}
+
+.gta,
+.app-custom,
+.sign-up {
+    margin-top: 20px;
+}
+
+
+
+.app-custom {
+    height: 40px;
+}
+
+@media screen and (max-width: 875px) {
+    #img-celular {
+        display: none
+    }
+}
