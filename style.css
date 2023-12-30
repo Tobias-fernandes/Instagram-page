@@ -7,6 +7,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
 :root {
     --gray: #fafafa;
     --border: #dfdfdf;
@@ -14,6 +22,7 @@
     --blue2: #0095F6;
     --darkblue: #385185;
     --moredarkblue: #35608A;
+    --span: #858585;
 }
 
 .container {
@@ -37,21 +46,58 @@
 .input-box {
     height: 400px;
     border: 1px solid var(--border);
-    padding: 40px 38px 0 38px;
+    padding: 40px 42px 0 42px;
 }
 
-.input-login {
+.inputLogin,
+.inputPassword {
+    position: relative;
+}
+
+.inputLogin,
+.inputPassword {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    margin-top: 30px;
-    margin-bottom: 15px;
 }
 
-.input-login input {
+.inputLogin input,
+.inputPassword input {
     padding: 9px 0 7px 8px;
     border: 1px solid var(--border);
     background: var(--gray);
+    outline: none;
+}
+
+.inputLogin .placeholder-login,
+.inputPassword .placeholder-password {
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    padding: 15px 20px;
+    pointer-events: none;
+    font-size: 12px;
+    color: var(--span);
+    transition: 0.2s;
+}
+
+.inputLogin input:valid ~ .placeholder-login,
+.inputPassword input:valid ~ .placeholder-password {
+    transform: translateX(-1px) translateY(-10px);
+    font-size: 10px;
+}
+
+#toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    color: #3f3f3f;
+    border: none;
+    background: none;
+
 }
 
 #btn-enviar {
@@ -62,6 +108,7 @@
     padding: 8px;
     color: #fff;
     font-weight: bold;
+    margin-top: 12px;
 }
 
 .linha-ou {
@@ -114,7 +161,6 @@
     font-size: 14px;
 }
 
-
 .sign-up {
     border: 1px solid var(--border);
     padding: 20px 0;
@@ -130,8 +176,6 @@
 .sign-up {
     margin-top: 20px;
 }
-
-
 
 .app-custom {
     height: 40px;

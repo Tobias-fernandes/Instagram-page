@@ -20,9 +20,15 @@
                         <img src="img/logo insta.png" alt="logo do instagram" class="logo">
 
                         <form>
-                            <div class="input-login">
-                                <input type="text" placeholder="Phone number, username, or email" required>
-                                <input type="password" placeholder="Password" required>
+                            <div class="inputLogin">
+                                <input type="text" required id="login">
+                                <span class="placeholder-login">Phone number, username, or password</span>
+                            </div>
+
+                            <div class="inputPassword">
+                                <input type="password" required id="password">
+                                <span class="placeholder-password">Password</span>
+                                <span id="toggle" onclick="showHide();">Show</span>
                             </div>
 
                             <input type="submit" value="Log in" id="btn-enviar">
