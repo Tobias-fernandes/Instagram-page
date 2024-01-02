@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up • Instagram</title>
+    <link rel="shortcut icon" href="img/insta-logo.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cadastro.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="container-cad">
+                <div class="logo">
+                    <img src="img/logo insta.png" alt="imagem da logo">
+                    <h4><span class="main-title">Sign up to see photos and videos <br> 
+                    from your friends.</span></h4>
+                </div>
+                <div class="btn-login-facebook">
+                    <a href="https://www.facebook.com/">
+                        <i class='bx bxl-facebook-square'></i>
+                        Log in with Facebook
+                    </a>
+                </div>
+                <div class="linha-ou">
+                    <div class="linha"></div>
+                    <div class="ou">OR</div>
+                    <div class="linha"></div>
+                </div>
+                <form>
+                    <div class="input-numberOrEmail">
+                        <input type="text" id="numberOrEmail" required>
+                        <span class="placeholder-numberOrEmail">Mobile Number or Email</span>
+                    </div>
+
+                    <div class="input-fullName">
+                        <input type="text" required>
+                        <span class="placeholder-fullName">Full Name</span>
+                    </div>
+
+                    <div class="input-username">
+                        <input type="text" required>
+                        <span class="placeholder-username">Username</span>
+                    </div>
+
+                    <div class="input-password">
+                        <input type="password" id="password" required>
+                        <span class="placeholder-password">Password</span>
+                        <span id="toggle" onclick="showHide();">Show</span>
+                    </div>
+
+                    <div class="service">
+                        <p>People who use our service may have uploaded your contact information to Instagram. <a href="https://www.facebook.com/help/instagram/261704639352628">Learn More</a></p>
+                    </div>
+    
+                    <div class="terms">
+                        <p>By signing up, you agree to our 
+                            <a href="https://help.instagram.com/581066165581870/?locale=en_US">Terms</a> , <a href="https://www.facebook.com/privacy/policy">Privacy Policy</a> and <a href="https://privacycenter.instagram.com/policies/cookies/">Coockies Policy</a> .</p>
+                    </div>
+                    
+                    <div class="btn-signup">
+                        <input type="submit" value="Sign up" id="btn-enviar">
+                    </div>
+                </form>
+            </div>
+
+            <div class="login">Have an account? <a href="index.html">Log in</a></div>
+
+            <div class="gta">
+                Get the app.
+            </div>
+
+            <div class="app">
+                <img src="img/baixe google play logo.png" alt="link de download no Google Play" class="app-custom">
+                <img src="img/baixe microsoft logo.png" alt="link de download no Google Play" class="app-custom">
+            </div>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

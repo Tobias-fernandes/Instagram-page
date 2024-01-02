@@ -10,7 +10,7 @@
 form {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 6px;
     margin-top: 30px;
     margin-bottom: 15px;
 }
@@ -52,10 +52,6 @@ form {
 .inputLogin,
 .inputPassword {
     position: relative;
-}
-
-.inputLogin,
-.inputPassword {
     display: flex;
     flex-direction: column;
 }
@@ -97,7 +93,7 @@ form {
     color: #3f3f3f;
     border: none;
     background: none;
-
+    user-select: none;
 }
 
 #btn-enviar {

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url(style.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.container-cad {
+    margin-top: 15px;
+    width: 350px;
+    border: 1px solid var(--border);
+    height: 620px;
+    padding: 35px 36px;
+    text-align: center;
+}
+
+.logo h4 {
+    margin-top: 15px;
+}
+
+.main-title {
+    font-size: 17px;
+    color: var(--span);
+    font-weight: 500;
+}
+
+.btn-login-facebook {
+    margin-top: 21px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn-login-facebook a {
+    background-color: #0095F6;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 50px;
+    border-radius: 7px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-login-facebook a i {
+    font-size: 21px;
+}
+
+.input-numberOrEmail,
+.input-fullName,
+.input-username,
+.input-password {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-numberOrEmail input,
+.input-fullName input,
+.input-username input,
+.input-password input {
+    padding: 9px 0 7px 8px;
+    border: 1px solid var(--border);
+    background: var(--gray);
+    outline: none;
+}
+
+.input-numberOrEmail .placeholder-numberOrEmail,
+.input-fullName .placeholder-fullName,
+.input-username .placeholder-username,
+.input-password .placeholder-password {
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    padding: 15px 20px;
+    pointer-events: none;
+    font-size: 12px;
+    color: var(--span);
+    transition: 0.2s;
+}
+
+.input-numberOrEmail input:valid ~ .placeholder-numberOrEmail,
+.input-fullName input:valid ~ .placeholder-fullName,
+.input-username input:valid ~ .placeholder-username,
+.input-passwrod input:valid ~ .placeholder-password {
+    transform: translateX(-1px) translateY(-10px);
+    font-size: 10px;
+}
+
+.service p,
+.terms p {
+    color: #737373;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0 6px;
+}
+
+.service,
+.terms {
+    margin-top: 14px;
+}
+
+.service a,
+.terms a {
+    text-decoration: none;
+    color: #00376b;
+}
+
+.login {
+    margin-top: 10px;
+    border: 1px solid var(--border);
+    padding: 30px 50px;
+}
+
+.login a {
+    color: #0095f6;
+    text-decoration: none;
+}
