@@ -94,6 +94,11 @@ form {
     border: none;
     background: none;
     user-select: none;
+    display: none;
+}
+
+#toggle.active {
+    display: block;
 }
 
 #btn-enviar {
