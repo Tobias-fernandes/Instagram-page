@@ -11,6 +11,8 @@ function showHide() {
     }
 }
 
+
+
 password.addEventListener("keyup", (a) => {
     if(a.target.value) {
         togglePassword.style.display = 'block';
